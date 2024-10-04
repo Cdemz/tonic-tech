@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-bg: #00010a;
+  --color-bg-variant: #9aa5fe;
+  --color-text: #2b2d42;
+  --color-primary: #064c5b;
+  --color-primary-v: #a1cbcc;
+  --color-primary-g: #f5f6f7;
+  --color-primary-b: #818a93;
+  --color-primary-a: #0d1010;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +36,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.openS {
+  font-family: "Open Sans", sans-serif;
 }
 
 @layer utilities {
