@@ -1,29 +1,16 @@
-import Image from "next/image";
 import React from "react";
-import boldoLogo from "../assets/boldoLogo.svg";
-import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative">
-      <div className="bg-[#0A2640] h-screen relative ">
-        <div className="bg-[rgb(28,61,91)] w-[493px] h-[493px] rounded-full absolute top-[-100px] right-[-100px]"></div>
-        <div className="">
-          <div className="">
-            <Image src={boldoLogo} height={300} width={300} alt="Boldo Logo" />
-          </div>
-          <div className="">
-            <Link href="/">Product</Link>
-            <Link href="/">Services</Link>
-            <Link href="/">About</Link>
-            <Link href="/">
-              <button className="w-[128px] h-[40px] rounded-[24px] bg-white ">
-                Log In
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
+    <div className="text-white text-5xl bg-[#0A2640] md:h-[40vh] lg:h-[80vh] h-[50vh] border-none text-center flex flex-col px-10 pb-20  ">
+      <h3 className="text-[#F1F1F1] mb-4 text-[20px] mt-14">About</h3>
+      <h1 className="mb-2 text-[36px] md:text-[64px] ">
+        We love to make great things, things that matter.
+      </h1>
+      <p className="text-[16px] mt-4">
+        Funding handshake buyer business-to-business metrics iPad partnership.
+        First mover advantage innovator success deployment non-disclosure.
+      </p>
     </div>
   );
 };
